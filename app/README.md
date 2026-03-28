@@ -1,9 +1,3 @@
-# devops-for-developers-project-74
-
-[![CI/CD Pipeline](https://github.com/mikozzun/devops-for-developers-project-74/actions/workflows/push.yml/badge.svg)](https://github.com/mikozzun/devops-for-developers-project-74/actions/workflows/push.yml)
-
-...
-
 # JS Fastify Blog
 
 [![Main](https://github.com/hexlet-components/js-fastify-blog/actions/workflows/main.yml/badge.svg)](https://github.com/hexlet-components/js-fastify-blog/actions/workflows/main.yml)
