@@ -33,30 +33,11 @@ lint-fix:
 test:
 	NODE_ENV=test npm test -s
 
-.PHONY: ci test dev up down build start
+test-compose:
+	docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
 
-# Команда для CI (запуск тестов через Docker Compose)
-ci:
-    docker compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
-
-# Существующие команды
-test:
-	npm test
-
-dev:
+compose-up:
 	docker-compose up
 
-up:
-	docker-compose up
-
-down:
+compose-down:
 	docker-compose down
-
-build:
-	docker-compose -f docker-compose.yml build app
-
-start:
-	make migrate && npm start
-
-migrate:
-	npx sequelize db:migrate
